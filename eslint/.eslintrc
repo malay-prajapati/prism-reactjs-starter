@@ -1,0 +1,64 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "./rules/base.js",
+    "./rules/best_practices.js",
+    "./rules/errors.js",
+    "./rules/style.js",
+    "./rules/imports.js",
+    "./rules/es6.js",
+    "./rules/variables.js",
+    "./rules/react_jsx.js"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "mocha": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "jsx-quotes": ["error", "prefer-double"],
+    "import/no-unassigned-import": "off",
+    "no-undefined": "off"
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "jsx": true
+  },
+  "globals": {
+    "nutanix": true,
+    "reqjs_define": true
+  }
+}
